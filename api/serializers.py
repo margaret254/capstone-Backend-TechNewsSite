@@ -17,5 +17,5 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 class NewSerializer(serializers.ModelSerializer):
     class Meta:
         model = New
-        fields = ('id','title','desc','new_image','pub_date')
+        fields = ('id','title','desc','new_image','pub_date','new_link')
         

@@ -13,8 +13,8 @@ router.register(r'news', views.NewViewSet)
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
-    re_path(r'^', include(router.urls)),
-    re_path(r'^auth/',ObtainAuthToken.as_view()),
+    path('', include(router.urls)),
+    path('auth/',ObtainAuthToken.as_view()),
 ]
 if settings.DEBUG:
     urlpatterns+= static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

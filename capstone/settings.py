@@ -59,6 +59,23 @@ CORS_ORIGIN_WHITELIST = [
     "http://localhost:4200",
 ]
 
+CORS_ALLOW_METHODS = [
+    'GET',
+    'POST'
+]
+
+CORS_ALLOW_HEADERS = [
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+]
+
 ROOT_URLCONF = 'capstone.urls'
 
 TEMPLATES = [
