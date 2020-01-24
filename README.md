@@ -1,4 +1,4 @@
-# TechNews Site/BackEd
+# TechNews Site/BackEnd
 
 #### This is the application backend part, where an API is created and consumed in the frontend part.
 #### By **Margaret254**&trade;
@@ -20,11 +20,12 @@ This is an app where users are fed with daily news in the industry of tech.
 
 4. Create .env file and paste p the following filling where appropriate:
 
--SECRET_KEY = '<Secret_key>'
--DBNAME = '<DBNAME>'
--USER = '<Username>'
--PASSWORD = '<password>'
--DEBUG = True
+###### SECRET_KEY = '<Secret_key>'
+###### DBNAME = '<DBNAME>'
+###### USER = '<Username>'
+###### PASSWORD = '<password>'
+###### DEBUG = True
+
 5. Run initial Migration
 -python3.6 manage.py makemigrations instagram
 -python3.6 manage.py migrate
